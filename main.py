@@ -22,6 +22,8 @@ def generate_graph(bass_volume, drum_volume, other_volume, vocal_volume):
     """Generate a Matplotlib graph based on current values."""
     # Data points
     x = [0, 1]  # Normalized throttle range
+    
+    #Initial Volumes
     y_bass = [0, bass_volume]
     y_drums = [0, drum_volume]
     y_other = [0, other_volume]
