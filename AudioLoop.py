@@ -13,8 +13,9 @@ class AudioLoop():
     
     def start(self):
         for sound in self.sounds:
-            sound.play(loops=-1)
+            sound.play(loops=-1)  # Looping indefinitely
     
     def adjust_volumes(self, volume_list):
         for i in range(0, len(self.sounds)):
             pygame.mixer.Channel(i).set_volume(volume_list[i])
+
